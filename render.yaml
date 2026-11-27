@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: sistema-cadastros
+    runtime: node
+    plan: free
+    # O sistema não tem dependências para instalar.
+    buildCommand: echo "Nada para instalar"
+    startCommand: npm start
+    healthCheckPath: /
+    autoDeployTrigger: commit
+    envVars:
+      - key: HOST
+        value: 0.0.0.0
+      - key: AVISO_DEMO
+        value: "Versão de demonstração: os dados são apagados quando o servidor reinicia ou fica inativo."

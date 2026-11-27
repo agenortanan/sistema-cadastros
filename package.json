@@ -1,0 +1,13 @@
+{
+  "name": "sistema-cadastros",
+  "version": "1.0.0",
+  "description": "Sistema com login, criação de conta, cadastros (Cliente, Produto, Material, Fornecedor) e configurações.",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "start": "node --no-warnings server.js"
+  },
+  "engines": {
+    "node": ">=22.13 <23"
+  }
+}
