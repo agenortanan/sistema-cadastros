@@ -1,0 +1,5 @@
+dados.db
+dados.db-shm
+dados.db-wal
+node_modules/
+.env

@@ -286,8 +286,10 @@ function viewEntidade(ent) {
           return h('td', { class: ehNum(f) ? 'num' : '' }, t || h('span', { class: 'vazio' }, '—'));
         }),
         h('td', { class: 'acoes' },
-          h('button', { class: 'btn ghost small', type: 'button', onclick: () => abrirForm(ent, reg, carregar) }, 'Editar'),
-          h('button', { class: 'btn link-danger small', type: 'button', onclick: () => excluir(reg) }, 'Excluir'),
+          h('div', { class: 'acoes-botoes' },
+            h('button', { class: 'btn ghost small', type: 'button', onclick: () => abrirForm(ent, reg, carregar) }, 'Editar'),
+            h('button', { class: 'btn link-danger small', type: 'button', onclick: () => excluir(reg) }, 'Excluir'),
+          ),
         ),
       ))),
     ));

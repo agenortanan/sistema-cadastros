@@ -197,7 +197,7 @@ tbody tr:last-child td { border-bottom: 0; }
 tbody tr:hover { background: var(--surface-2); }
 td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
 td.acoes, th.acoes { text-align: right; width: 1%; }
-td.acoes { display: flex; gap: .35rem; justify-content: flex-end; }
+td.acoes .acoes-botoes { display: inline-flex; gap: .35rem; }
 td .vazio { color: var(--muted); }
 .estado-vazio { padding: 2.5rem 1rem; text-align: center; color: var(--muted); }
 .paginacao { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: 1rem; color: var(--muted); font-size: .9rem; }
